@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 20px !important; }
+  .ul__li {
+    font-size: 25px;
+    margin: 0px; } }
+
+.contenedor--color {
+  background-color: #F1D4E3 !important; }
+
+/*map-get*/
+.caja__titulo {
+  display: flex;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 640px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  box-sizing: border-box;
+  width: 15%;
+  border: solid #f0c6dc 10px;
+  padding: 5px; }
+
+.receta__producto {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0px 10px 0px;
+  flex-direction: column;
+  margin-left: 25px; }
+
+.receta__ingrediente, .receta__procedimiento {
+  font-weight: bold;
+  font-size: 20px; }
+
+.footerL {
+  margin: 0px; }
+
+/*map-get*/
+body {
+  font-family: 'Heebo', sans-serif; }
+
+.contenedor--color {
+  background-color: transparent !important; }
+
+.contenedorI--color {
+  background-color: transparent !important; }
+
+footer {
+  background-color: #1d1b1b; }
+
+.footerL__listas--color {
+  color: white; }
+
+.transicion {
+  transition: 300ms; }
+
+.transicion:hover {
+  transform: translateY(-15px); }
+
+.contenedor {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.menu__logo {
+  display: flex;
+  justify-content: flex-start; }
+
+.menu__li {
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.ul__li {
+  margin: 20px 40px; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+
+.footerL__listas {
+  font-size: 30px;
+  display: inline-flex;
+  margin: 20px; }
+
+/*map-get*/
+.contenedorI {
+  margin: 0px;
+  position: absolute;
+  z-index: 1;
+  box-sizing: content-box;
+  width: 100%; }
+
+.carousel {
+  width: 1519px;
+  height: auto;
+  position: relative; }
+
+.menuI__li {
+  display: flex;
+  justify-content: center;
+  font-size: 25px; }
+
+.imagenes__bloque {
+  display: flex;
+  justify-content: center; }
+
+.contenedorI--tamaño {
+  font-size: 33px; }
+
+.imagenes2__titulo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center; }
+
+.footer, .imagenes {
+  margin: 0px; }
+
+.imagenes {
+  margin: 40px 40px; }
+
+.imagenes2__img1 {
+  margin: 20px; }

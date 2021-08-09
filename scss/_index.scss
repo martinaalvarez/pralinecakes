@@ -1,0 +1,62 @@
+$margin0: 0px;
+$margin: 20px;
+$titulos:30px;
+
+
+/*map-get*/
+$estilos:(
+    posicion:center,
+    tamañoletra:10px,
+    tamañotitulo:25px,
+    flex:flex,
+);
+
+
+.contenedorI{
+	margin: $margin0;
+	position: absolute;
+	z-index: 1;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.carousel{
+	width: 1519px;
+	height: auto;
+	position: relative;
+}
+
+.menuI__li{
+    display: flex;
+    justify-content: map-get($estilos,posicion);
+    font-size: map-get($estilos,tamañotitulo);
+}
+
+.imagenes__bloque{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorI--tamaño{
+    font-size: $titulos+3;
+}
+
+.imagenes2__titulo{
+    font-size: $titulos;
+    display: flex;
+    justify-content: center;
+}
+
+.footer, .imagenes{
+    margin: $margin0;
+}
+
+.imagenes{
+    margin: $margin*2 $margin*2;
+}
+
+.imagenes2__img1{
+    margin: $margin;
+}
+
+

@@ -1,0 +1,49 @@
+$margin:-15px;
+$margin0:0px;
+$espacios:20px;
+
+
+.ul__li{
+    margin: 50px 20px 0px 20px;
+}
+
+
+.footer{
+    margin-right: $margin0;
+}
+
+.imagenes{
+    margin-right: $margin0;
+}
+
+.imagenes__bloque{
+    margin-right: $margin0;
+}
+
+.imagenes2__titulo{
+    margin: 20px;
+}
+
+.imagenes2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagenes2__img1{
+    margin: $espacios;
+}
+
+.footerL__listas{
+    list-style: none;
+    display: inline;
+    margin:$espacios;
+}
+
+.footerL{
+    display: flex;
+    justify-content: center;
+}
+
+
+
