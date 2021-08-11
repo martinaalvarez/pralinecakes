@@ -1,10 +1,52 @@
 @charset "UTF-8";
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 20px !important; }
-  .ul__li {
-    font-size: 25px;
-    margin: 0px; } }
+.rowN, .divN {
+  margin-right: 0px; }
+
+.parrafo-nosotros1--titulo {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px; }
+
+.parrafo__nosotros2 {
+  box-sizing: content-box;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: 100px; }
+
+.parrafo__nosotros2--info {
+  margin-left: 80px;
+  background-color: #f0c6dc;
+  box-sizing: content-box; }
+
+.formulario {
+  margin-right: 0px;
+  margin-bottom: 200px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; }
+
+.label__texto {
+  display: flex;
+  justify-content: center; }
+
+.boton {
+  box-sizing: content-box;
+  width: 20%;
+  margin-left: 340px; }
+
+@media only screen and (min-width: 1024px) {
+  .contenedorI {
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+    box-sizing: content-box;
+    width: 100%; }
+  .carousel {
+    width: 1519px;
+    position: relative;
+    opacity: 0.9; } }
 
 .contenedor--color {
   background-color: #F1D4E3 !important; }
@@ -85,18 +127,6 @@ footer {
   margin: 20px; }
 
 /*map-get*/
-.contenedorI {
-  margin: 0px;
-  position: absolute;
-  z-index: 1;
-  box-sizing: content-box;
-  width: 100%; }
-
-.carousel {
-  width: 1519px;
-  height: auto;
-  position: relative; }
-
 .menuI__li {
   display: flex;
   justify-content: center;
@@ -114,6 +144,10 @@ footer {
   display: flex;
   justify-content: center; }
 
+.imagenes2 a {
+  color: #000;
+  text-decoration: none; }
+
 .footer, .imagenes {
   margin: 0px; }
 
@@ -121,4 +155,26 @@ footer {
   margin: 40px 40px; }
 
 .imagenes2__img1 {
+  margin: 20px;
+  list-style: none; }
+
+/*map-get*/
+.rowP {
+  margin: 0px; }
+
+.conteinerP {
+  margin-bottom: 40px; }
+
+.div__producto--img, .tit__descripcion, .tit__subtitulo {
+  display: flex;
+  justify-content: center;
   margin: 20px; }
+
+.tit__subtitulo {
+  font-weight: bold;
+  font-size: 20px; }
+
+.tit__descripcion {
+  box-sizing: content-box;
+  width: 70%;
+  margin-left: 120px; }

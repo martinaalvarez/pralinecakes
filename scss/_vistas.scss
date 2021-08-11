@@ -1,5 +1,9 @@
 $vista:mobile;
+$vista:desktop;
 $mobileT:10px;
+$margin0:0px;
+
+
 @if $vista == mobile{
     @media only screen and (max-width:767px){
      h1{font-size: $mobileT*2 !important;}
@@ -7,5 +11,32 @@ $mobileT:10px;
         font-size: ($mobileT*3)-5;
         margin: 0px;
     }   
+    .contenedorI__menu{
+        margin-right:$margin0;
+    }
+    .carousel{
+        margin-right: $margin0;
+    }
+    .contenedorI{
+        margin-right: $margin0;
+    }
+    }
+}
+
+@if $vista == desktop{
+    @media only screen and (min-width:1024px){
+        .contenedorI{
+            margin: $margin0;
+            position: absolute;
+            z-index: 1;
+            box-sizing: content-box;
+            width: 100%;
+        }  
+        .carousel{
+            width: 1519px;
+            position: relative;
+            opacity: 0.9;
+        }
+         
     }
 }

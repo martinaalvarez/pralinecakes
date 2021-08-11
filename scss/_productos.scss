@@ -16,3 +16,30 @@ $estilos:(
     flex:flex,
 );
 
+.rowP{
+    margin: $margin0;
+}
+
+.conteinerP{
+    margin-bottom: $margin*2;
+}
+
+.div__producto--img, .tit__descripcion, .tit__subtitulo{
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos,posicion);
+    margin: $margin;
+}
+
+.tit__subtitulo{
+    font-weight: bold;
+    font-size: map-get($estilos,tamañosubtitulo);
+}
+
+.tit__descripcion{
+    box-sizing: content-box;
+    width: 70%;
+    margin-left: $margin*6;
+}
+
+
+

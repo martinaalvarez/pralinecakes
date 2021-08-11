@@ -1,6 +1,7 @@
 $margin0: 0px;
 $margin: 20px;
 $titulos:30px;
+$negro:#000;
 
 
 /*map-get*/
@@ -10,21 +11,6 @@ $estilos:(
     tamañotitulo:25px,
     flex:flex,
 );
-
-
-.contenedorI{
-	margin: $margin0;
-	position: absolute;
-	z-index: 1;
-    box-sizing: content-box;
-    width: 100%;
-}
-
-.carousel{
-	width: 1519px;
-	height: auto;
-	position: relative;
-}
 
 .menuI__li{
     display: flex;
@@ -47,6 +33,11 @@ $estilos:(
     justify-content: center;
 }
 
+.imagenes2 a{   
+    color: $negro;
+    text-decoration: none;
+}
+
 .footer, .imagenes{
     margin: $margin0;
 }
@@ -57,6 +48,7 @@ $estilos:(
 
 .imagenes2__img1{
     margin: $margin;
+    list-style: none;
 }
 
 

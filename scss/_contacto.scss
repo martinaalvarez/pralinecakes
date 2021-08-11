@@ -1,0 +1,27 @@
+$centro:center;
+$margin0:0px;
+$margin:20px;
+$titulos:30px;
+$negro:#000;
+$flex:flex;
+$titulo:30px;
+$texto:20px;
+
+.formulario{
+    margin-right: $margin0;
+    margin-bottom: $margin*10;
+    margin-top: $margin*3;
+    display: $flex;
+    justify-content: $centro;
+}
+
+.label__texto{
+    display: $flex;
+    justify-content: $centro;
+}
+
+.boton{
+    box-sizing: content-box;
+    width: 20%;
+    margin-left: $margin*17;
+}
