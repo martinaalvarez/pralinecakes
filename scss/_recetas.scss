@@ -16,6 +16,9 @@ $estilos:(
     flex:flex,
 );
 
+.contenedorR{
+    margin: $margin0;
+}
 
 .caja__titulo{
     display: map-get($estilos, flex);
