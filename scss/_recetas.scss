@@ -4,10 +4,10 @@ $negro:#000;
 $margin0:0px;
 $margin1:20px;
 
+/* scss recetas*/
 
 .contenedor--color{background-color: $rosa1 !important;}
 
-/*map-get*/
 $estilos:(
     posicion:center,
     tamañoletra:10px,
@@ -16,7 +16,7 @@ $estilos:(
     flex:flex,
 );
 
-.contenedorR{
+.row{
     margin: $margin0;
 }
 
