@@ -16,10 +16,6 @@ $estilos:(
     flex:flex,
 );
 
-.row{
-    margin: $margin0;
-}
-
 .caja__titulo{
     display: map-get($estilos, flex);
     justify-content: map-get($estilos,posicion!important);
@@ -54,7 +50,9 @@ $estilos:(
     margin: 0px;
 }
 
-
+.contenedorR{
+    margin: $margin0;
+}
 
 
 
