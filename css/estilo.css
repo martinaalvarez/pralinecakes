@@ -236,9 +236,10 @@ footer {
     margin-left: 20px; }
   /*nosotros*/
   .parrafo__nosotros2--img {
-    margin-left: 50px; }
+    margin-left: 60px; }
   .parrafo__nosotros2--info {
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-right: 20px; }
   /*contacto*/
   .label__texto {
     margin-left: 150px; }
