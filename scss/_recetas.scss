@@ -1,12 +1,13 @@
 $rosa1:#F1D4E3;
 $rosa2:#f0c6dc;
+$rosa3:#DB7E7E;
 $negro:#000;
 $margin0:0px;
 $margin1:20px;
 
-/* scss recetas*/
+/* INICIO SCSS RECETAS*/
 
-.contenedor--color{background-color: $rosa1 !important;}
+.contenedor--color{background-color: $rosa3 !important;}
 
 $estilos:(
     posicion:center,
@@ -27,7 +28,7 @@ $estilos:(
     color: $negro;
     box-sizing: border-box;
     width: 15%;
-    border: solid $rosa2 10px;
+    border: solid $rosa3 10px;
     padding: 5px;
 }
 

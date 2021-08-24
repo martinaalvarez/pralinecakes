@@ -3,9 +3,13 @@ $margin0:0px;
 $margin:20px;
 $titulos:30px;
 $negro:#000;
+$rosa1:#F1D4E3;
+$rosa2:#f0c6dc;
 $flex:flex;
 $titulo:30px;
 $texto:20px;
+
+/*INICIO SCSS CONTACTO*/
 
 .formulario{
     margin-right: $margin0;
@@ -24,4 +28,16 @@ $texto:20px;
     box-sizing: content-box;
     width: 20%;
     margin-left: $margin*17;
+}
+
+.label__texto{
+    background-color:#DB7E7E ;
+    box-sizing: content-box;
+    width: 130px;
+    margin-left: 310px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #DB7E7E;
 }

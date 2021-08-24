@@ -7,14 +7,16 @@ $margin0: 0px;
 $margin: 20px;
 $titulos:30px;
 
-/*map-get*/
+/* INICIO SCSS GENERAL*/
+
 $estilos:(
     posicion:center,
     tamañoletra:10px,
-    tamañotitulo:30px,
+    tamañotitulo:25px,
     tamañosubtitulo:20px,
     flex:flex,
 );
+
 
 body{
 	font-family:'Heebo', sans-serif;
@@ -30,7 +32,7 @@ body{
 
 
 footer{
-    background-color:$gris
+    background-color:$gris;
 }
 
 .footerL__listas--color{

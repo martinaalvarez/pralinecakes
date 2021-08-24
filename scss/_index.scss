@@ -2,9 +2,12 @@ $margin0: 0px;
 $margin: 20px;
 $titulos:30px;
 $negro:#000;
+$rosa1:#F1D4E3;
+$rosa2:#f0c6dc;
+$vista:desktop;
 
+/*INICIO SCSS INDEX*/
 
-/*map-get*/
 $estilos:(
     posicion:center,
     tamañoletra:10px,
@@ -12,10 +15,27 @@ $estilos:(
     flex:flex,
 );
 
+
+@if $vista == desktop{
+    @media only screen and (min-width:1024px){
+        .contenedorI{
+            margin: $margin0;
+            position: absolute;
+            z-index: 1;
+            box-sizing: content-box;
+            width: 100%;
+        }  
+        .carousel{
+            width: 1519px;
+            position: relative;
+            opacity: 0.9;
+        }
+    }
+}
+
 .menuI__li{
     display: flex;
     justify-content: map-get($estilos,posicion);
-    font-size: map-get($estilos,tamañotitulo);
 }
 
 .imagenes__bloque{
@@ -51,4 +71,12 @@ $estilos:(
     list-style: none;
 }
 
-
+.footerL__listas{
+    background-color: #DB7E7E;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: map-get($estilos, posicion);
+    
+}

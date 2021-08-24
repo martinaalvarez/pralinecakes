@@ -1,0 +1,82 @@
+$vista:mobile;
+$mobileT:10px;
+$margin0:0px;
+$margin:10px;
+
+/*INICIO SCSS VISTA MOBILE*/
+
+@if $vista == mobile {
+    @media only screen and (min-width: 0px) and (max-width: 767px){
+    /*index*/
+    h3{
+        font-size: $mobileT*2 !important;
+    }
+    .ul__li--tamaño{
+        font-size: ($mobileT*2)+5;
+    }
+    .contenedorI{
+        margin-right: $margin0;
+    }
+    .carousel{
+        margin-right: $margin0;
+    }
+
+    .carousel__imagenes{
+        padding-right: $margin0;
+    }
+
+    .footerL__listas{
+        margin: $mobileT !important;
+    }
+
+    .footerL{
+        margin-right: $mobileT*3+5 !important;
+    }
+
+    /*productos*/
+    .div__producto{
+        margin-left: $mobileT*2;
+    }
+
+    /*nosotros*/
+    .parrafo__nosotros2--img{
+        margin-left: $margin*5;
+    }
+
+    .parrafo__nosotros2--info{
+        margin-top: $margin*3;
+    }
+
+    /*contacto*/
+    .label__texto{
+        margin-left: $margin*15;
+    }
+
+    .boton{
+        margin-left: $margin*18;
+    }
+
+    .label__f{
+        margin-left: $margin;
+    }
+
+    .label__f--opciones{
+        width: 50px;
+        height: 5px;
+    }
+
+    /*recetas*/
+    .receta__producto{
+        margin-left: $margin !important;
+        margin-right: $margin !important;
+    }
+    .caja__titulo{
+        margin-left: $margin*10 !important;
+        width: 50% !important;
+        font-size: $mobileT*3 !important;
+        margin-bottom: $margin*5;
+    }
+
+    }  
+}
+

@@ -1,4 +1,5 @@
 $centro:center;
+$vista:desktop;
 $margin0:0px;
 $margin:20px;
 $titulos:30px;
@@ -9,6 +10,8 @@ $texto:20px;
 $gris: rgb(29, 27, 27);
 $rosa1:#F1D4E3;
 $rosa2:#f0c6dc;
+
+/*INICIO SCSS NOSOTROS*/
 
 .rowN, .divN{
     margin-right: $margin0;
@@ -21,16 +24,19 @@ $rosa2:#f0c6dc;
     font-size:$titulo;
 }
 
-.parrafo__nosotros2{
-    box-sizing: content-box;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    margin: $margin*5;
+@if $vista == desktop{
+    @media only screen and (min-width:1024px){
+        .parrafo__nosotros2{
+            box-sizing: content-box;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            margin: $margin*5;
 
+        }
+    }
 }
 
 .parrafo__nosotros2--info{
     margin-left: $margin*3;
-    background-color: $rosa2;
 }
