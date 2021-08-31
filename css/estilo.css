@@ -40,9 +40,7 @@
 
 .imagenes2__img {
   width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center; }
+  margin-top: 20px; }
 
 .imagenes {
   margin: 40px 40px; }
@@ -95,7 +93,7 @@
 .rowN, .divN {
   margin-right: 0px; }
 
-.parrafo-nosotros1--titulo {
+.parrafo__nosotros1--titulo, .parrafo2__local {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -107,7 +105,20 @@
     width: 70%;
     display: flex;
     align-items: center;
-    margin: 100px; } }
+    margin: 100px; }
+  .palermo, .belgrano {
+    display: flex;
+    justify-content: center; }
+  .palermo__texto, .belgrano__texto {
+    margin-left: 100px;
+    margin-top: 100px; }
+  .parrafo2__locales {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: start; }
+  .palermo__img, .belgrano__img {
+    margin-left: 100px; } }
 
 .parrafo__nosotros2--info {
   margin-left: 60px; }
@@ -185,19 +196,6 @@
 .imgNav__i--tamaño {
   height: 1300px !important; }
 
-.imgNav__b {
-  font-size: 25px;
-  background-color: white;
-  box-sizing: content-box;
-  width: 20%;
-  border-radius: 90px;
-  display: flex;
-  justify-content: center;
-  margin-top: 300px;
-  margin-left: 600px;
-  color: #000;
-  text-decoration: none; }
-
 /* INICIO SCSS GENERAL*/
 body {
   font-family: 'Heebo', sans-serif; }
@@ -219,7 +217,7 @@ body {
     font-family: 'Acme', sans-serif; }
   .corousel {
     width: 100%; }
-  .contenedorR__menu, .contenedor__menu, .contenedorI__menu {
+  .contenedor, .contenedorI, .contenedorR {
     width: 100%; } }
 
 .contenedor--color {
@@ -237,6 +235,9 @@ footer {
 
 .footerL__listas--color {
   color: white; }
+
+.footerL {
+  margin-top: 20px; }
 
 .transicion {
   transition: 300ms; }
@@ -267,7 +268,7 @@ footer {
 .footerL__listas {
   font-size: 20px;
   display: flex;
-  margin: 20px; }
+  margin-top: 25px; }
 
 .cophyright {
   box-sizing: content-box;
@@ -282,10 +283,24 @@ footer {
   margin-top: 150px;
   margin-left: 200px; }
 
-.logoF {
+.imgNav__b {
+  font-size: 25px;
   background-color: white;
-  margin-left: -400px;
-  border: solid #1d1b1b 5px; }
+  box-sizing: content-box;
+  width: 10%;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  margin-left: 690px;
+  color: #000;
+  text-decoration: none; }
+
+.logoF__img {
+  margin-left: -200px;
+  background-color: white;
+  border: solid #1d1b1b 1px;
+  margin-top: 20px; }
 
 a:hover {
   text-decoration: none !important;
@@ -293,6 +308,13 @@ a:hover {
 
 /*INICIO SCSS VISTA MOBILE*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  /*general*/
+  .contenedor, .contenedorI, .contenedorR {
+    width: 100%; }
+  .navBar {
+    width: 100%; }
+  .contenedorI__menu {
+    padding-right: 0px; }
   /*index*/
   .navbar-collapse {
     background-color: white !important;
@@ -300,7 +322,7 @@ a:hover {
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 600px;
+    height: 650px;
     opacity: 0.8; }
   .imgNav__t {
     position: relative;
@@ -311,6 +333,18 @@ a:hover {
     font-weight: bold;
     color: white;
     font-family: 'Acme', sans-serif; }
+  .imgNav__b {
+    font-size: 25px;
+    background-color: white;
+    box-sizing: content-box;
+    width: 50%;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #000;
+    text-decoration: none; }
   h3 {
     font-size: 20px !important; }
   .ul__li--tamaño {
@@ -320,7 +354,7 @@ a:hover {
     width: 100%; }
   .carousel {
     margin-left: -4px;
-    margin-top: 5px;
+    margin-top: 100px;
     width: 100% !important; }
   .carousel__imagenes {
     padding-right: 0px; }
@@ -331,7 +365,8 @@ a:hover {
   .footerL__listas {
     margin: 10px !important; }
   .footerL {
-    margin-right: 35px !important; }
+    margin-right: 35px !important;
+    margin-left: -20px; }
   .logoF__img {
     width: 100px;
     height: 100px;
@@ -344,35 +379,53 @@ a:hover {
     font-size: 15px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-top: 10px; }
-  .logoF {
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-top: 0px; }
+  .cophyright__copy {
+    margin-top: 0px;
+    margin-left: 0px; }
+  .logoF__img {
+    margin-left: 140px;
     background-color: white;
-    margin-left: 120px;
-    border: solid #1d1b1b 5px;
-    box-sizing: content-box;
-    width: 30%; }
+    border: solid #1d1b1b 1px;
+    margin-top: 10px; }
   /*productos*/
   .contenedor {
     width: 100%; }
   .div__producto {
     width: 100%; }
   .conteinerP {
-    margin-top: -50px; }
+    margin-top: 150px; }
   .rowP {
     margin-top: 10px; }
   /*nosotros*/
   .rowN {
-    margin-top: 10px; }
+    margin-top: 150px; }
   .parrafo__nosotros1 {
     margin-left: 9px; }
-  .parrafo__nosotros2--img {
-    margin-left: 60px; }
+  .parrafo__nosotros1--titulo, .parrafo2__local {
+    margin-top: 50px; }
+  .parrafo__nosotros2--img, .belgrano__img, .palermo__img {
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 100%; }
   .parrafo__nosotros2--info {
     margin-top: 30px;
     margin-right: 20px; }
+  .palermo, .belgrano {
+    flex-direction: column; }
+  .texto__titulo {
+    margin-left: 140px;
+    margin-top: 30px; }
+  .texto__direc, .texto__dias {
+    margin-left: 10px;
+    margin-top: 20px; }
+  .belgrano__texto--margin {
+    margin-bottom: 100px; }
   /*contacto*/
+  .formulario {
+    margin-top: 150px; }
   .label__texto {
     margin-left: 150px; }
   .boton {
@@ -383,11 +436,168 @@ a:hover {
     width: 50px;
     height: 5px; }
   /*recetas*/
+  .caja1 {
+    margin-top: 200px; }
   .receta__producto {
     margin-left: 10px !important;
     margin-right: 10px !important; }
   .caja__titulo {
     margin-left: 100px !important;
     width: 50% !important;
+    font-size: 30px !important;
+    margin-bottom: 50px; } }
+
+/*INICIO SCSS VISTA MOBILE*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*general*/
+  .contenedor, .contenedorI, .contenedorR {
+    width: 100%; }
+  .navBar {
+    width: 100%; }
+  .contenedorI__menu {
+    padding-right: 0px; }
+  /*index*/
+  .navbar-collapse {
+    background-color: white !important;
+    opacity: 0.8 !important; }
+  .imgNav__i {
+    position: relative;
+    width: 100% !important;
+    height: 800px;
+    opacity: 0.8; }
+  .imgNav__t {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -450px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Acme', sans-serif; }
+  .imgNav__b {
+    font-size: 25px;
+    background-color: white;
+    box-sizing: content-box;
+    width: 30%;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 270px;
+    color: #000;
+    text-decoration: none; }
+  h3 {
+    font-size: 20px !important; }
+  .ul__li--tamaño {
+    font-size: 25px; }
+  .contenedorI {
+    margin-right: 0px;
+    width: 100%; }
+  .carousel {
+    margin-left: -4px;
+    margin-top: 150px;
+    width: 100% !important; }
+  .carousel__imagenes {
+    padding-right: 0px; }
+  .imagenes__bloque {
+    padding-left: 0px; }
+  .imagenes2__img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .imagenes2__img1 {
+    margin-right: 10px; }
+  .footerL__listas {
+    margin: 10px !important; }
+  .footerL {
+    margin-right: 35px !important;
+    margin-left: -20px; }
+  .logoF__img {
+    width: 100px;
+    height: 100px;
+    margin: 0px; }
+  .row2 {
+    display: flex;
+    flex-direction: column; }
+  .cophyright {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-top: 0px; }
+  .cophyright__copy {
+    margin-top: 0px;
+    margin-left: 0px; }
+  .logoF__img {
+    margin-left: 140px;
+    background-color: white;
+    border: solid #1d1b1b 1px;
+    margin-top: 10px; }
+  .logoF {
+    display: flex;
+    justify-content: center;
+    margin-left: -100px; }
+  .rowFo {
+    display: flex;
+    justify-content: center; }
+  /*productos*/
+  .contenedor {
+    width: 100%; }
+  .div__producto {
+    width: 100%; }
+  .conteinerP {
+    margin-top: 400px; }
+  .rowP {
+    margin-top: 10px; }
+  /*nosotros*/
+  .rowN {
+    margin-top: 250px; }
+  .parrafo__nosotros2--img, .palermo__img, .belgrano__img {
+    width: 500px !important;
+    margin-left: 130px !important; }
+  .parrafo__nosotros1 {
+    margin-left: 9px; }
+  .parrafo__nosotros1--titulo, .parrafo2__local {
+    margin-top: 50px; }
+  .parrafo__nosotros2--img, .belgrano__img, .palermo__img {
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 100%; }
+  .parrafo__nosotros2--info {
+    margin-top: 30px;
+    margin-right: 20px; }
+  .palermo, .belgrano {
+    flex-direction: column; }
+  .texto__titulo {
+    margin-left: 300px !important;
+    margin-top: 30px !important; }
+  .texto__direc, .texto__dias {
+    margin-left: 250px !important;
+    margin-top: 20px !important; }
+  .belgrano__texto--margin {
+    margin-bottom: 100px; }
+  /*contacto*/
+  .formulario {
+    margin-top: 300px; }
+  .label__texto {
+    margin-left: 300px !important; }
+  .boton {
+    margin-left: 330px !important; }
+  .label__f {
+    margin-left: 10px !important; }
+  .label__f--opciones {
+    width: 50px !important;
+    height: 5px !important; }
+  /*recetas*/
+  .caja1 {
+    margin-top: 350px; }
+  .receta__producto {
+    margin-left: 100px !important;
+    margin-right: 100px !important; }
+  .caja__titulo {
+    margin-left: 300px !important;
+    width: 30% !important;
     font-size: 30px !important;
     margin-bottom: 50px; } }

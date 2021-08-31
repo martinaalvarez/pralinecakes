@@ -47,7 +47,7 @@ body{
             width: 100%;
         }
 
-        .contenedorR__menu, .contenedor__menu, .contenedorI__menu{
+        .contenedor, .contenedorI, .contenedorR{
             width: 100%;
         }
     }
@@ -73,6 +73,10 @@ footer{
 
 .footerL__listas--color{
     color:$blanco;
+}
+
+.footerL{
+    margin-top: $margin;
 }
 
 .transicion{
@@ -111,7 +115,7 @@ footer{
 .footerL__listas{
     font-size: $titulos/2 +5;
     display: flex;
-    margin: $margin;
+    margin-top: $margin+5;
 }
 
 .cophyright{
@@ -129,14 +133,33 @@ footer{
     margin-left: 200px;
 }
 
-.logoF{
+.imgNav__b{
+    font-size: 25px;
     background-color: white;
-    margin-left: -400px;
-    border: solid $gris 5px;
+    box-sizing: content-box;
+    width: 10%;
+    border-radius: 90px;
+    display: map-get($estilos,flex);
+    justify-content: map-get($estilos,posicion);
+    margin-top: 300px;
+    margin-left: 690px;
+    color: $negro;
+    text-decoration: none;
+}
+
+
+
+.logoF__img{
+    margin-left: -200px;
+    background-color: $blanco;
+    border: solid $gris 1px;
+    margin-top: $margin;
 }
 
 a:hover{
     text-decoration: none !important;
     color: white;
 }
+
+
 

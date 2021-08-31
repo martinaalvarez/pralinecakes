@@ -1,4 +1,4 @@
-$vista:mobile;
+$vista:tablet;
 $mobileT:10px;
 $margin0:0px;
 $margin:10px;
@@ -6,8 +6,8 @@ $margin2:20px;
 
 /*INICIO SCSS VISTA MOBILE*/
 
-@if $vista == mobile {
-    @media only screen and (min-width: 0px) and (max-width: 767px){
+@if $vista == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
     /*general*/
 
     .contenedor, .contenedorI, .contenedorR{
@@ -33,7 +33,7 @@ $margin2:20px;
     .imgNav__i{
         position: relative;
         width: 100% !important;
-        height: 650px;
+        height: 800px;
         opacity: 0.8;
     }
 
@@ -41,7 +41,7 @@ $margin2:20px;
         position: relative;
         display: map-get($estilos, flex);
         justify-content: map-get($estilos, posicion);
-        margin-top: -300px;
+        margin-top: -450px;
         font-size: $margin*5;
         font-weight: bold;
         color: white;
@@ -53,12 +53,12 @@ $margin2:20px;
         font-size: 25px;
         background-color: white;
         box-sizing: content-box;
-        width: 50%;
+        width: 30%;
         border-radius: 90px;
         display: map-get($estilos,flex);
         justify-content: map-get($estilos,posicion);
-        margin-top: 100px;
-        margin-left: 100px;
+        margin-top: 80px;
+        margin-left: 270px;
         color: $negro;
         text-decoration: none;
     }
@@ -77,7 +77,7 @@ $margin2:20px;
 
     .carousel{
         margin-left: -4px;
-        margin-top: $margin*10;
+        margin-top: $margin*15;
         width: 100% !important;
     }
 
@@ -87,6 +87,13 @@ $margin2:20px;
 
     .imagenes__bloque{
         padding-left: 0px;
+    }
+
+    .imagenes2__img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
     }
 
     .imagenes2__img1{
@@ -135,6 +142,17 @@ $margin2:20px;
         margin-top: $margin;
     }
 
+    .logoF{
+        display: flex;
+        justify-content: center;
+        margin-left: -100px;
+    }
+
+    .rowFo{
+        display: flex;
+        justify-content: center;
+    }
+
 
     /*productos*/
 
@@ -147,7 +165,7 @@ $margin2:20px;
     }
 
     .conteinerP{
-        margin-top:150px;
+        margin-top:400px;
     }
 
     .rowP{
@@ -157,7 +175,12 @@ $margin2:20px;
     /*nosotros*/
 
     .rowN{
-        margin-top: $margin*15;
+        margin-top: $margin*25;
+    }
+
+    .parrafo__nosotros2--img, .palermo__img, .belgrano__img{
+        width: 500px !important;
+        margin-left: 130px !important;
     }
 
     .parrafo__nosotros1{
@@ -184,13 +207,13 @@ $margin2:20px;
     }
 
     .texto__titulo{
-        margin-left: 140px;
-        margin-top: 30px;
+        margin-left: 300px !important;
+        margin-top: 30px !important;
     }
 
     .texto__direc, .texto__dias{
-        margin-left: $margin;
-        margin-top: $margin*2;
+        margin-left: 250px !important;
+        margin-top: $margin*2 !important;
     }
 
     .belgrano__texto--margin{
@@ -200,37 +223,37 @@ $margin2:20px;
     /*contacto*/
 
     .formulario{
-        margin-top: $margin*15;
+        margin-top: $margin*30;
     }
 
     .label__texto{
-        margin-left: $margin*15;
+        margin-left: $margin*30 !important;
     }
 
     .boton{
-        margin-left: $margin*18;
+        margin-left: $margin*33 !important;
     }
 
     .label__f{
-        margin-left: $margin;
+        margin-left: $margin !important;
     }
 
     .label__f--opciones{
-        width: 50px;
-        height: 5px;
+        width: 50px !important;
+        height: 5px !important;
     }
 
     /*recetas*/
     .caja1{
-        margin-top: $margin*20;
+        margin-top: $margin*35;
     }
     .receta__producto{
-        margin-left: $margin !important;
-        margin-right: $margin !important;
+        margin-left: $margin*10 !important;
+        margin-right: $margin*10 !important;
     }
     .caja__titulo{
-        margin-left: $margin*10 !important;
-        width: 50% !important;
+        margin-left: $margin*30 !important;
+        width: 30% !important;
         font-size: $mobileT*3 !important;
         margin-bottom: $margin*5;
     }
@@ -238,4 +261,3 @@ $margin2:20px;
 
     }  
 }
-

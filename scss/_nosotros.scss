@@ -17,12 +17,15 @@ $rosa2:#f0c6dc;
     margin-right: $margin0;
 }
 
-.parrafo-nosotros1--titulo{
+
+.parrafo__nosotros1--titulo, .parrafo2__local{
     display:$flex;
     justify-content:$centro;
     font-weight: bold;
     font-size:$titulo;
 }
+
+
 
 @if $vista == desktop{
     @media only screen and (min-width:1024px){
@@ -34,6 +37,28 @@ $rosa2:#f0c6dc;
             margin: $margin*5;
 
         }
+
+        .palermo, .belgrano{
+            display:flex;
+            justify-content: center;
+        }
+
+        .palermo__texto, .belgrano__texto{
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        .parrafo2__locales{
+            margin-top: $margin*5;
+            margin-bottom: $margin*5;
+            display: flex;
+            justify-content: start;
+        }
+
+        .palermo__img, .belgrano__img{
+            margin-left: 100px;
+        }
+        
     }
 }
 
@@ -44,3 +69,4 @@ $rosa2:#f0c6dc;
 .rowN{
     margin-top:$margin*25;
 }
+
