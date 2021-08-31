@@ -17,11 +17,18 @@ $estilos:(
 
 /*INICIO SCSS PRODUCTOS*/
 
+.contenedor{
+    position: absolute;
+    z-index: 1;
+}
+
 .rowP{
-    margin: $margin0;
+    margin-right: $margin0;
+    margin-top: $margin*5;
 }
 
 .conteinerP{
+    margin-top: $margin*30;
     margin-bottom: $margin*2;
 }
 
@@ -52,9 +59,9 @@ font-size: map-get($estilos,tamañosubtitulo);
 .div__producto{
     border: solid 1px $gris;
     border-radius: 20px;
-    width: 350px;
+    width: 100%;
     height: 500px;
-    margin-left: $margin*3;
+    margin-left: 8px;
     margin-bottom: $margin*2;
 }
 

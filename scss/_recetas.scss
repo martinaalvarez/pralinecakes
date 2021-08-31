@@ -17,6 +17,10 @@ $estilos:(
     flex:flex,
 );
 
+.caja1{
+    margin-top: $margin1*25;
+}
+
 .caja__titulo{
     display: map-get($estilos, flex);
     justify-content: map-get($estilos,posicion!important);
@@ -53,6 +57,26 @@ $estilos:(
 
 .contenedorR{
     margin: $margin0;
+    position: absolute;
+    z-index: 1;
+}
+
+.imgNav__i--tamaño{
+    height: 1300px !important;
+}
+
+.imgNav__b{
+    font-size: 25px;
+    background-color: white;
+    box-sizing: content-box;
+    width: 20%;
+    border-radius: 90px;
+    display: map-get($estilos,flex);
+    justify-content: map-get($estilos,posicion);
+    margin-top: 300px;
+    margin-left: 600px;
+    color: $negro;
+    text-decoration: none;
 }
 
 

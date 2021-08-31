@@ -16,6 +16,7 @@
 	<link rel = "preconnect" href = "https://fonts.googleapis.com">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 	<link href = "https: //fonts.googleapis.com/css2? family = Heebo: wght @ 300 & display = swap "rel =" stylesheet ">
+	<link href = "https: //fonts.googleapis.com/css2? family = Acme & display = swap "rel =" stylesheet ">
 	<!--link boostrap-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<!--link animaciones-->
@@ -56,18 +57,23 @@
 				</nav>
 			</div>
 		</div>
+		<div class="imgNavI">
+			<img class="imgNav__i" src="./assets/img/alfajores blancos.jpg">
+			<h1 class="imgNav__t transicion" data-aos="zoom-in-down" data-aos-duration="1500">Bienvenido</h1>
+			<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/praline-cakes-palermo-menu"><p class="imgNav__b" data-aos="zoom-in-down" data-aos-duration="1500"><img class="imgNav__t--pedidos" src="./assets/img/pedidos ya.png" width="25" height="25">QUIERO MI TORTA</p></a>
+		</div>
 		<div class="row carousel">
-			<section class="col-lg-12 col-xs-4 carousel__imagenes">
+			<section class="col-lg-7 col-xs-4 carousel__imagenes">
 				<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 					  <div class="carousel-item active img" data-interval="10000">
-						<img src="assets/img/alfacookies1.png" class="d-block w-100 img-fluid" alt="Torta">
+						<img src="assets/img/imagen-carrusel1.png" class="d-block w-100 img-fluid" alt="Torta">
 					  </div>
 					  <div class="carousel-item" data-interval="2000">
-						<img src="assets/img/budin de limon 3.jpg" class="d-block w-100 img-fluid" alt="Torta">
+						<img src="assets/img/imagen-carrusel2.jpeg" class="d-block w-100 img-fluid" alt="Torta">
 					  </div>
 					  <div class="carousel-item img">
-						<img src="assets/img/cookies 2.jpg" class="d-block w-100 img-fluid" alt="Torta">
+						<img src="assets/img/imagen-carrusel3.jpeg" class="d-block w-100 img-fluid" alt="Torta">
 					  </div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -84,7 +90,7 @@
 		<div class="row imagenes">
 			<div class="col-lg-12 col-xs-12 imagenes__bloque">
 				<section class="imagenes2">
-					<a href="pages/productos.html"><h3 class="imagenes2__titulo transicion">ALGUNAS DELICIAS</h3></a>
+					<a class="imagenes2__a" href="pages/productos.html"><h3 class="imagenes2__titulo transicion">ALGUNAS DELICIAS</h3></a>
 					<div class="imagenes2__img">
 						<a href="pages/productos.html"><img class="imagenes2__img1" src="assets/img/cookie choco.jpg" width="350px" height="360px"></a>
 						<a href="pages/productos.html"><img class="imagenes2__img1" src="assets/img/Red velvet.jpg" width="350px" height="360px"></a>
@@ -96,24 +102,34 @@
 		<!--cierre del contenido-->
 		<!--inicio footer redes-->
 		<div class="row footer">
-			<footer class="col-lg-12 col-xs-12 footer__margen">
-				<ul class="footerL">
-					<li class="footerL__listas">
-						<a href=""><i class="fab fa-whatsapp transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href="https://www.instagram.com/pralinecakes/?hl=es"><i class="fab fa-instagram transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href=""><i class="far fa-envelope transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href=""><i class="fas fa-phone transicion footerL__listas--color"></i></a>
-					</li>
-				</ul>
+			<footer class="col-lg-12 col-xs-12 footer__margen row2">
+				<div class=" col-xs-4 logoF">
+					<img class="logoF__img" src="./assets/img/Logo.png" width="160" height="160" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+				</div>
+				<div class="rowFo">
+					<ul class=" col-lg-12 col-xs-4 footerL">
+						<li class="footerL__listas">
+							<a href="https://wa.me/"><i class="fab fa-whatsapp transicion footerL__listas--color"><number>1131405576</number></i></a>
+						</li>
+						<li class="footerL__listas">
+							<a href="https://www.instagram.com/pralinecakes/?hl=es"><i class="fab fa-instagram transicion footerL__listas--color"> @paralinecakes</i></a>
+						</li>
+						<li class="footerL__listas">
+							<a href="mailto:consultas@pralinecakes.com"><i class="far fa-envelope transicion footerL__listas--color"> consultas@pralinecakes.com</i></a>
+						</li>
+						<li class="footerL__listas">
+							<a class="transicion footerL__listas--color footerL__listas--link" href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/praline-cakes-palermo-menu"><img class="transicion footerL__listas--color footerL__listas--link" src="./assets/img/pedidos ya.png" width="25" height="25"> pedidos ya</a>
+						</li>
+					</ul>
+				</div>
+				<div class="rowFo">
+					<div class="col-lg-12 col-xs-4 cophyright">
+						<p class="cophyright__copy">© 2021 Martina Alvarez / Todos los derechos reservados</p>
+					</div>
+				</div>			
 			</footer>
 			<!--cierre footer-->
-		</div>	
+		</div>		
 	</div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

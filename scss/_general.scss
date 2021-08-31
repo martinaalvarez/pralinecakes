@@ -6,6 +6,7 @@ $blanco: white;
 $margin0: 0px;
 $margin: 20px;
 $titulos:30px;
+$vista:desktop;
 
 /* INICIO SCSS GENERAL*/
 
@@ -22,8 +23,43 @@ body{
 	font-family:'Heebo', sans-serif;
 }
 
+@if $vista == desktop{
+    @media only screen and (min-width:1024px){
+        .imgNav__i{
+            position: relative;
+            width: 100% !important;
+            height: 1200px;
+            opacity: 0.7;
+        }
+        
+        .imgNav__t{
+            position: relative;
+            display: map-get($estilos, flex);
+            justify-content: map-get($estilos, posicion);
+            margin-top: -820px;
+            font-size: $margin*3;
+            font-weight: bold;
+            color: white;
+            font-family:'Acme', sans-serif;
+
+        }
+        .corousel{
+            width: 100%;
+        }
+
+        .contenedorR__menu, .contenedor__menu, .contenedorI__menu{
+            width: 100%;
+        }
+    }
+}
+
 .contenedor--color{
     background-color: transparent !important;
+}
+
+.imgNav__t--pedidos{
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .contenedorI--color{
@@ -59,8 +95,8 @@ footer{
 
 .menu__li{
    display: flex;
-    justify-content: map-get($estilos,posicion);
-    font-size: map-get($estilos,tamañotitulo);
+   justify-content: map-get($estilos,posicion);
+   font-size: map-get($estilos,tamañotitulo);
 }
 
 .ul__li{
@@ -72,11 +108,35 @@ footer{
     justify-content: center;
 }
 
-
-
 .footerL__listas{
-    font-size: $titulos;
-    display: inline-flex;
+    font-size: $titulos/2 +5;
+    display: flex;
     margin: $margin;
+}
+
+.cophyright{
+    box-sizing: content-box;
+    width: 100%;
+    color: white;
+    font-size: $titulos/2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cophyright__copy{
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.logoF{
+    background-color: white;
+    margin-left: -400px;
+    border: solid $gris 5px;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: white;
 }
 

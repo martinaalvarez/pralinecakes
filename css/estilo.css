@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /*INICIO SCSS INDEX*/
-@media only screen and (min-width: 1024px) {
-  .contenedorI {
-    margin: 0px;
-    position: absolute;
-    z-index: 1;
-    box-sizing: content-box;
-    width: 100%; }
-  .carousel {
-    width: 1519px;
-    position: relative;
-    opacity: 0.9; } }
+.row {
+  margin-right: 0px; }
+
+.contenedorI {
+  position: absolute;
+  z-index: 1; }
+
+.carousel {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center; }
 
 .menuI__li {
   display: flex;
@@ -23,17 +23,26 @@
 .contenedorI--tamaño {
   font-size: 33px; }
 
+.imagenes2 {
+  margin-top: 20px; }
+
 .imagenes2__titulo {
   font-size: 30px;
   display: flex;
   justify-content: center; }
 
-.imagenes2 a {
+.imagenes2__a {
   color: #000;
   text-decoration: none; }
 
 .footer, .imagenes {
   margin: 0px; }
+
+.imagenes2__img {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
 
 .imagenes {
   margin: 40px 40px; }
@@ -42,19 +51,17 @@
   margin: 20px;
   list-style: none; }
 
-.footerL__listas {
-  background-color: #DB7E7E;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center; }
-
 /*INICIO SCSS PRODUCTOS*/
+.contenedor {
+  position: absolute;
+  z-index: 1; }
+
 .rowP {
-  margin: 0px; }
+  margin-right: 0px;
+  margin-top: 100px; }
 
 .conteinerP {
+  margin-top: 600px;
   margin-bottom: 40px; }
 
 .div__producto--img, .tit__descripcion, .tit__subtitulo {
@@ -79,9 +86,9 @@
 .div__producto {
   border: solid 1px #1d1b1b;
   border-radius: 20px;
-  width: 350px;
+  width: 100%;
   height: 500px;
-  margin-left: 60px;
+  margin-left: 8px;
   margin-bottom: 40px; }
 
 /*INICIO SCSS NOSOTROS*/
@@ -105,11 +112,14 @@
 .parrafo__nosotros2--info {
   margin-left: 60px; }
 
+.rowN {
+  margin-top: 500px; }
+
 /*INICIO SCSS CONTACTO*/
 .formulario {
   margin-right: 0px;
   margin-bottom: 200px;
-  margin-top: 60px;
+  margin-top: 500px;
   display: flex;
   justify-content: center; }
 
@@ -136,6 +146,9 @@
 /* INICIO SCSS RECETAS*/
 .contenedor--color {
   background-color: #DB7E7E !important; }
+
+.caja1 {
+  margin-top: 500px; }
 
 .caja__titulo {
   display: flex;
@@ -165,14 +178,56 @@
   margin: 0px; }
 
 .contenedorR {
-  margin: 0px; }
+  margin: 0px;
+  position: absolute;
+  z-index: 1; }
+
+.imgNav__i--tamaño {
+  height: 1300px !important; }
+
+.imgNav__b {
+  font-size: 25px;
+  background-color: white;
+  box-sizing: content-box;
+  width: 20%;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  margin-left: 600px;
+  color: #000;
+  text-decoration: none; }
 
 /* INICIO SCSS GENERAL*/
 body {
   font-family: 'Heebo', sans-serif; }
 
+@media only screen and (min-width: 1024px) {
+  .imgNav__i {
+    position: relative;
+    width: 100% !important;
+    height: 1200px;
+    opacity: 0.7; }
+  .imgNav__t {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -820px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Acme', sans-serif; }
+  .corousel {
+    width: 100%; }
+  .contenedorR__menu, .contenedor__menu, .contenedorI__menu {
+    width: 100%; } }
+
 .contenedor--color {
   background-color: transparent !important; }
+
+.imgNav__t--pedidos {
+  margin-top: 5px;
+  margin-right: 5px; }
 
 .contenedorI--color {
   background-color: transparent !important; }
@@ -210,31 +265,108 @@ footer {
   justify-content: center; }
 
 .footerL__listas {
-  font-size: 30px;
-  display: inline-flex;
+  font-size: 20px;
+  display: flex;
   margin: 20px; }
+
+.cophyright {
+  box-sizing: content-box;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+.cophyright__copy {
+  margin-top: 150px;
+  margin-left: 200px; }
+
+.logoF {
+  background-color: white;
+  margin-left: -400px;
+  border: solid #1d1b1b 5px; }
+
+a:hover {
+  text-decoration: none !important;
+  color: white; }
 
 /*INICIO SCSS VISTA MOBILE*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   /*index*/
+  .navbar-collapse {
+    background-color: white !important;
+    opacity: 0.8 !important; }
+  .imgNav__i {
+    position: relative;
+    width: 100% !important;
+    height: 600px;
+    opacity: 0.8; }
+  .imgNav__t {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Acme', sans-serif; }
   h3 {
     font-size: 20px !important; }
   .ul__li--tamaño {
     font-size: 25px; }
   .contenedorI {
-    margin-right: 0px; }
+    margin-right: 0px;
+    width: 100%; }
   .carousel {
-    margin-right: 0px; }
+    margin-left: -4px;
+    margin-top: 5px;
+    width: 100% !important; }
   .carousel__imagenes {
     padding-right: 0px; }
+  .imagenes__bloque {
+    padding-left: 0px; }
+  .imagenes2__img1 {
+    margin-right: 10px; }
   .footerL__listas {
     margin: 10px !important; }
   .footerL {
     margin-right: 35px !important; }
+  .logoF__img {
+    width: 100px;
+    height: 100px;
+    margin: 0px; }
+  .row2 {
+    display: flex;
+    flex-direction: column; }
+  .cophyright {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px; }
+  .logoF {
+    background-color: white;
+    margin-left: 120px;
+    border: solid #1d1b1b 5px;
+    box-sizing: content-box;
+    width: 30%; }
   /*productos*/
+  .contenedor {
+    width: 100%; }
   .div__producto {
-    margin-left: 20px; }
+    width: 100%; }
+  .conteinerP {
+    margin-top: -50px; }
+  .rowP {
+    margin-top: 10px; }
   /*nosotros*/
+  .rowN {
+    margin-top: 10px; }
+  .parrafo__nosotros1 {
+    margin-left: 9px; }
   .parrafo__nosotros2--img {
     margin-left: 60px; }
   .parrafo__nosotros2--info {

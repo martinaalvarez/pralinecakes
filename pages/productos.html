@@ -16,6 +16,8 @@
 	<link rel = "preconnect" href = "https://fonts.googleapis.com">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 	<link href = "https: //fonts.googleapis.com/css2? family = Heebo: wght @ 300 & display = swap "rel =" stylesheet ">
+	<link href = "https: //fonts.googleapis.com/css2? family = Anton & display = swap "rel =" stylesheet ">
+	<link href = "https: //fonts.googleapis.com/css2? family = Acme & display = swap "rel =" stylesheet ">
 	<!--link boostrap-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<!--link animaciones-->
@@ -56,9 +58,14 @@
 				</nav>
 			</div>
 		</div>
+		<div class="imgNav">
+			<img class="imgNav__i" src="../assets/img/alfajores blancos.jpg">
+			<h1 class="imgNav__t" data-aos="zoom-in-down" data-aos-duration="1500">Productos</h1>
+			<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/praline-cakes-palermo-menu"><p class="imgNav__b" data-aos="zoom-in-down" data-aos-duration="1500"><img class="imgNav__t--pedidos" src="../assets/img/pedidos ya.png" width="25" height="25">QUIERO MI TORTA</p></a>
+		</div>
 		<!-- cierre del header-->
 		<section class="conteinerP">
-			<div class="row rowP">
+			<div class="row rowP conteinerp__row">
 				<div class="col-lg-4 col-xs-12 margin div">
 					<article class="div__producto">
 						<div class="div__producto--img">
@@ -224,21 +231,31 @@
 			</div>
 		</section>
 		<div class="row footer">
-			<footer class="col-lg-12 col-xs-12 footer__margen">
-				<ul class="footerL">
-					<li class="footerL__listas">
-						<a href=""><i class="fab fa-whatsapp transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href="https://www.instagram.com/pralinecakes/?hl=es"><i class="fab fa-instagram transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href=""><i class="far fa-envelope transicion footerL__listas--color"></i></a>
-					</li>
-					<li class="footerL__listas">
-						<a href=""><i class="fas fa-phone transicion footerL__listas--color"></i></a>
-					</li>
-				</ul>
+			<footer class="col-lg-12 col-xs-12 footer__margen row2">
+				<div class=" col-xs-4 logoF">
+					<img class="logoF__img" src="../assets/img/Logo.png" width="160" height="160" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+				</div>
+				<div class="rowFo">
+					<ul class=" col-lg-12 col-xs-4 footerL">
+						<li class="footerL__listas">
+							<a href="https://wa.me/"><i class="fab fa-whatsapp transicion footerL__listas--color"><number>1131405576</number></i></a>
+						</li>
+						<li class="footerL__listas">
+							<a href="https://www.instagram.com/pralinecakes/?hl=es"><i class="fab fa-instagram transicion footerL__listas--color"> @paralinecakes</i></a>
+						</li>
+						<li class="footerL__listas">
+							<a href="mailto:consultas@pralinecakes.com"><i class="far fa-envelope transicion footerL__listas--color"> consultas@pralinecakes.com</i></a>
+						</li>
+						<li class="footerL__listas">
+							<a class="transicion footerL__listas--color footerL__listas--link" href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/praline-cakes-palermo-menu"><img class="transicion footerL__listas--color footerL__listas--link" src="../assets/img/pedidos ya.png" width="25" height="25"> pedidos ya</a>
+						</li>
+					</ul>
+				</div>
+				<div class="rowFo">
+					<div class="col-lg-12 col-xs-4 cophyright">
+						<p class="cophyright__copy">© 2021 Martina Alvarez / Todos los derechos reservados</p>
+					</div>
+				</div>			
 			</footer>
 			<!--cierre footer-->
 		</div>		
