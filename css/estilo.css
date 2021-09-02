@@ -204,7 +204,7 @@ body {
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 1300px;
+    height: 1400px;
     opacity: 0.7; }
   .imgNav__t {
     position: relative;
@@ -323,13 +323,13 @@ a:hover {
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 550px;
+    height: 650px;
     opacity: 0.8; }
   .imgNav__t {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -300px;
+    margin-top: -350px;
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -397,7 +397,7 @@ a:hover {
   .div__producto {
     width: 100%; }
   .conteinerP {
-    margin-top: 150px; }
+    margin-top: 200px; }
   .rowP {
     margin-top: 10px; }
   /*nosotros*/
@@ -426,7 +426,7 @@ a:hover {
     margin-bottom: 100px; }
   /*vista mobile contacto*/
   .formulario {
-    margin-top: 150px; }
+    margin-top: 200px; }
   .label__texto {
     margin-left: 150px; }
   .boton {

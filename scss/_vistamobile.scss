@@ -33,7 +33,7 @@ $margin2:20px;
     .imgNav__i{
         position: relative;
         width: 100% !important;
-        height: 550px;
+        height: 650px;
         opacity: 0.8;
     }
 
@@ -41,7 +41,7 @@ $margin2:20px;
         position: relative;
         display: map-get($estilos, flex);
         justify-content: map-get($estilos, posicion);
-        margin-top: -300px;
+        margin-top: -350px;
         font-size: $margin*5;
         font-weight: bold;
         color: white;
@@ -104,8 +104,8 @@ $margin2:20px;
 
     .logoF__img{
         width: 100px;
-        height: 100px;
-        margin: 0px;
+        height: $margin*10;
+        margin: $margin0;
     }
 
     .row2{
@@ -118,14 +118,14 @@ $margin2:20px;
         font-size: $titulos/2;
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: $margin2;
         margin-left: -20px;
         margin-top: 0px;
     }
 
     .cophyright__copy{
-        margin-top:0px;
-        margin-left:0px;
+        margin-top:$margin0;
+        margin-left:$margin0;
     }
     
     .logoF__img{
@@ -147,7 +147,7 @@ $margin2:20px;
     }
 
     .conteinerP{
-        margin-top:150px;
+        margin-top:$margin2*10;
     }
 
     .rowP{
@@ -200,7 +200,7 @@ $margin2:20px;
     /*vista mobile contacto*/
 
     .formulario{
-        margin-top: $margin*15;
+        margin-top: $margin*20;
     }
 
     .label__texto{
