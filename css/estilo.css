@@ -323,7 +323,7 @@ a:hover {
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 650px;
+    height: 700px;
     opacity: 0.8; }
   .imgNav__t {
     position: relative;
@@ -460,7 +460,7 @@ a:hover {
   /*index*/
   .navbar-collapse {
     background-color: white !important;
-    opacity: 0.8 !important; }
+    opacity: 1 !important; }
   .imgNav__i {
     position: relative;
     width: 100% !important;
@@ -490,7 +490,7 @@ a:hover {
   h3 {
     font-size: 20px !important; }
   .ul__li--tamaño {
-    font-size: 25px; }
+    font-size: 20px; }
   .contenedorI {
     margin-right: 0px;
     width: 100%; }
