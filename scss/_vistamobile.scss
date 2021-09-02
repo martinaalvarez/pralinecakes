@@ -8,7 +8,7 @@ $margin2:20px;
 
 @if $vista == mobile {
     @media only screen and (min-width: 0px) and (max-width: 767px){
-    /*general*/
+    /*vista mobile general*/
 
     .contenedor, .contenedorI, .contenedorR{
         width: 100%;
@@ -23,17 +23,17 @@ $margin2:20px;
     }
     
 
-    /*index*/
+    /*vista mobile index*/
     
     .navbar-collapse{
         background-color: white !important;
-        opacity: 0.8 !important;
+        opacity: 1 !important;
     }
 
     .imgNav__i{
         position: relative;
         width: 100% !important;
-        height: 650px;
+        height: 550px;
         opacity: 0.8;
     }
 
@@ -136,7 +136,7 @@ $margin2:20px;
     }
 
 
-    /*productos*/
+    /*vista mobile productos*/
 
     .contenedor{
         width: 100%;
@@ -197,7 +197,7 @@ $margin2:20px;
         margin-bottom: $margin*10;
     }
 
-    /*contacto*/
+    /*vista mobile contacto*/
 
     .formulario{
         margin-top: $margin*15;
@@ -220,7 +220,7 @@ $margin2:20px;
         height: 5px;
     }
 
-    /*recetas*/
+    /*vista mobile recetas*/
     .caja1{
         margin-top: $margin*20;
     }

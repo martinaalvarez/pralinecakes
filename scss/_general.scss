@@ -13,8 +13,8 @@ $vista:desktop;
 $estilos:(
     posicion:center,
     tamañoletra:10px,
-    tamañotitulo:25px,
-    tamañosubtitulo:20px,
+    tamañotitulo:20px,
+    tamañosubtitulo:22px,
     flex:flex,
 );
 
@@ -28,7 +28,7 @@ body{
         .imgNav__i{
             position: relative;
             width: 100% !important;
-            height: 1200px;
+            height: 1300px;
             opacity: 0.7;
         }
         
@@ -36,7 +36,7 @@ body{
             position: relative;
             display: map-get($estilos, flex);
             justify-content: map-get($estilos, posicion);
-            margin-top: -820px;
+            margin-top: -920px;
             font-size: $margin*3;
             font-weight: bold;
             color: white;
@@ -101,6 +101,7 @@ footer{
    display: flex;
    justify-content: map-get($estilos,posicion);
    font-size: map-get($estilos,tamañotitulo);
+   margin-left: -150px;
 }
 
 .ul__li{
@@ -137,12 +138,12 @@ footer{
     font-size: 25px;
     background-color: white;
     box-sizing: content-box;
-    width: 10%;
+    width: 15%;
     border-radius: 90px;
     display: map-get($estilos,flex);
     justify-content: map-get($estilos,posicion);
     margin-top: 300px;
-    margin-left: 690px;
+    margin-left: 650px;
     color: $negro;
     text-decoration: none;
 }

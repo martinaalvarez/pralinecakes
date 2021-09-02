@@ -124,13 +124,13 @@
   margin-left: 60px; }
 
 .rowN {
-  margin-top: 500px; }
+  margin-top: 600px; }
 
 /*INICIO SCSS CONTACTO*/
 .formulario {
   margin-right: 0px;
   margin-bottom: 200px;
-  margin-top: 500px;
+  margin-top: 600px;
   display: flex;
   justify-content: center; }
 
@@ -159,7 +159,7 @@
   background-color: #DB7E7E !important; }
 
 .caja1 {
-  margin-top: 500px; }
+  margin-top: 600px; }
 
 .caja__titulo {
   display: flex;
@@ -204,13 +204,13 @@ body {
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 1200px;
+    height: 1300px;
     opacity: 0.7; }
   .imgNav__t {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -820px;
+    margin-top: -920px;
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -256,7 +256,8 @@ footer {
 .menu__li {
   display: flex;
   justify-content: center;
-  font-size: 25px; }
+  font-size: 20px;
+  margin-left: -150px; }
 
 .ul__li {
   margin: 20px 40px; }
@@ -287,12 +288,12 @@ footer {
   font-size: 25px;
   background-color: white;
   box-sizing: content-box;
-  width: 10%;
+  width: 15%;
   border-radius: 90px;
   display: flex;
   justify-content: center;
   margin-top: 300px;
-  margin-left: 690px;
+  margin-left: 650px;
   color: #000;
   text-decoration: none; }
 
@@ -308,21 +309,21 @@ a:hover {
 
 /*INICIO SCSS VISTA MOBILE*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /*general*/
+  /*vista mobile general*/
   .contenedor, .contenedorI, .contenedorR {
     width: 100%; }
   .navBar {
     width: 100%; }
   .contenedorI__menu {
     padding-right: 0px; }
-  /*index*/
+  /*vista mobile index*/
   .navbar-collapse {
     background-color: white !important;
-    opacity: 0.8 !important; }
+    opacity: 1 !important; }
   .imgNav__i {
     position: relative;
     width: 100% !important;
-    height: 650px;
+    height: 550px;
     opacity: 0.8; }
   .imgNav__t {
     position: relative;
@@ -390,7 +391,7 @@ a:hover {
     background-color: white;
     border: solid #1d1b1b 1px;
     margin-top: 10px; }
-  /*productos*/
+  /*vista mobile productos*/
   .contenedor {
     width: 100%; }
   .div__producto {
@@ -423,7 +424,7 @@ a:hover {
     margin-top: 20px; }
   .belgrano__texto--margin {
     margin-bottom: 100px; }
-  /*contacto*/
+  /*vista mobile contacto*/
   .formulario {
     margin-top: 150px; }
   .label__texto {
@@ -435,7 +436,7 @@ a:hover {
   .label__f--opciones {
     width: 50px;
     height: 5px; }
-  /*recetas*/
+  /*vista mobile recetas*/
   .caja1 {
     margin-top: 200px; }
   .receta__producto {
@@ -447,7 +448,7 @@ a:hover {
     font-size: 30px !important;
     margin-bottom: 50px; } }
 
-/*INICIO SCSS VISTA MOBILE*/
+/*INICIO SCSS VISTA TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*general*/
   .contenedor, .contenedorI, .contenedorR {
